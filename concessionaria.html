@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>concessionaria</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="concessionaria.css">
+  
+  <link rel="icon" type="image/x-icon" href="http://picsum.photos/300/200">
+</head>
+<!--
+  creriamo un sito con bootstrap con due div con testo piacere un titolo una sezione card e un carousel//le macchine nelle card//carousel foto della concessionaria
+-->
+
+<body>
+  <div id="main">
+    
+    <h1>Concessonaria</h1>
+    
+    <!--opensidebar-->
+    <div id="mySidebar" class="sidebar"> 
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      
+      <a href="#" class="">Where to find us</a>
+      <a href="#" class="">Services</a>
+      <a href="#" class="">Clients</a>
+      <a href="#contatti" class="fa fa-fw fa-envelope"> Contact</a>
+    </div>
+    
+    <!--movimento Sidebar: java-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
+    
+    <!--navbar 1-->
+    <div id="topnav">
+      <ul>
+        <li><a class="active" href="concessionaria.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li> 
+        <li><a href="#login">Login</a></li>
+      </ul>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <br>
+    
+    <!--opensidebar-->
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+    
+    <!--testo-->
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ad, tenetur, illo velit aliquid repellendus officiis voluptatum alias voluptatibus itaque neque aut deleniti. Deleniti animi facere vitae similique rem ullam.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sint architecto, laboriosam debitis possimus deserunt ipsam impedit neque necessitatibus earum facilis minima excepturi doloribus sed a? Nihil suscipit ea at?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque quis voluptatibus architecto recusandae cum nulla impedit eos animi voluptate vitae voluptates repudiandae culpa ipsum, ea libero, rerum ipsa accusamus.
+        <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam facere qui distinctio doloribus animi quam alias aspernatur sunt corporis eos saepe nemo omnis enim, odio sint. Officia, eum tempora! Voluptate.
+      </p> 
+    </div> 
+    
+    <br>
+    
+    <!--carousel(fotoscroll)-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://www.eyeofriyadh.com/news_images/2017/05/7d9328c6ce23.jpg" class="d-block w-100" alt="1">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://www.jwm-rfid.com/wp-content/uploads/2019/10/Beijing-Benz-4S-Store-Showroom.jpg" class="d-block w-100" alt="2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.motor1.com/images/mgl/KpY7G/s1/concessionari-auto-al-governo-piu-incentivi-via-l-ecotassa-e-iva-detraibile.jpg" class="d-block w-100" alt="3">
+          
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <br>
+    
+    <h2>Le nostre auto</h2>
+      
+    <!--FORD-->
+    <div id="ford" class="card mb-3" style="max-width: 640px">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <img src="https://statics.quattroruote.it/content/dam/quattroruote/it/foto/2022/03/01/ford_everest_2022_/gallery/rsmall/2022-ford-everest-47.jpg" class="img-fluid rounded-start" alt="FordEverest">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Ford Everest 2023</h5>
+          <p class="card-text">
+            La Ford Everest presenta un design robusto e imponente, con una griglia anteriore che si fonde perfettamente con i fari a LED a forma di C. La lunghezza del veicolo è stata aumentata rispetto alla generazione precedente, con una carreggiata più larga di 50 mm per una maggiore stabilità e una presenza più muscolare1. L'abitacolo è dotato di un sistema di infotainment SYNC 4A con display centrale verticale da 10.1 pollici nel modello Ambiente e da 12 pollici nelle versioni Trend, Sport e Platinum
+          </p>
+          <a href="https://www.quattroruote.it/listino/ford/explorer" class="btn btn-primary"> Scheda Tecnica</a>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    
+    <!--NISSAN-->
+    <div class="card mb-3" style="max-width: 640px">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <img src="https://www-europe.nissan-cdn.net/content/dam/Nissan/nissan_europe/vehicles/370z-roadster/z34/1_carryover/overview/370z-roadster-overview-side-view.jpg.ximg.l_full_m.smart.jpg" class="img-fluid rounded-start" alt="Nissan">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Nissan 370Z-ROADSTER</h5>
+          <p> 
+            La 370Z è caratterizzata da un design aggressivo, da sportiva pura, il frontale è caratterizzato dai gruppi ottici, dalla singolare forma a boomerang, che conferiscono sinuosità alle fiancate in cui si evidenziano le bombature in corrispondenza dei passaruota posteriori, per finire con il retro spiovente. La versione Roadster è un'auto di nicchia, per il divertimento e il tempo libero, per gente che privilegia look ed emozioni ed è disposta ad accettare qualche sacrificio. Perché, in quattro metri abbondanti di macchina, c'è posto per due sole persone, e con pochi bagagli al seguito.
+          </p>
+          <a href="https://www.quattroruote.it/auto/nissan/z/370z-roadster-37-v6-lev-2-085202201509" class="btn btn-primary">Scheda Tecnica</a>
+          
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--TOYOTA-->
+    <div class="card mb-3" style="max-width: 640px">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <img src="https://th.bing.com/th/id/R.8615a0951f1ae53acfdd66cf570b002d?rik=p%2bf7O3OTytTv%2bg&riu=http%3a%2f%2fcdn.auto.it%2fimages%2f2017%2f10%2f06%2f071346662-3503ab5f-b176-4f17-ab38-a3fab34c2a3a.jpg&ehk=S6Ty6OoDddSU93w9VABZH9ehyieCL34stUbo8ce1t8E%3d&risl=&pid=ImgRaw&r=0" alt="toyota" class="img-fluid rounded-start">
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">Toyota CH-R</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          </p>
+          <a href="https://newsroom.toyota.it/download/459175/c-hrmy18listinopubblico-settembre17.pdf" class="btn btn-primary">Listino prezzi</a>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div> 
+    
+    <!--IBRIDE-->
+    <div class="card">
+      <img src="https://static.autoblog.nl/images/wp2019/audi-q5-tfsi-hybrid-blue-rear-side-2019-750.jpg" class="card-img-top" alt="ibrida">
+      <div class="card-body">
+        <h5 class="card-title">Ibride</h5>
+        <p class="card-text">
+          This card has supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="ElencoCompleto.html" class="btn btn-primary">Elenco completo</a>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    
+    
+    <!--ELETTRICHE-->
+    <div class="card">
+      <img src="https://www.lifeandpeople.it/wp-content/uploads/2022/11/smart-brabus-2023-elettrica.jpeg" class="card-img-top" alt="smart">
+      <div class="card-body">
+        <h5 class="card-title">Elettriche</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+        </p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    
+    
+    <footer id="contatti">
+      
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      
+      <a href="https://web.telegram.org/" class="fa fa-telegram"></a>
+      
+    </footer>
+    
+    <div id="mycontact">
+      <div id="me">
+      <p>Author: Serena Gigliotti</p>
+      <p><a href="mailto:mymail@example.com" style="color: beige">seregigliotti@gmail.com </a></p>
+      </div>
+      <br>
+      <small>Tutti i contenuti sono protetti dalla licenza creative commons</small>
+      
+  </div>  
+    
+    
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>elenco completo</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="concessionaria.css">
+    <link rel="icon" type="image/x-icon" href="http://picsum.photos/300/200">
+    
+    
+</head>
+
+<body>
+    <div id="main">
+        <!--opensidebar-->
+        <div id="menù">
+            <div id="mySidebar" class="sidebar"> 
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#" class="">Where to find us</a>
+                <a href="#" class="">Services</a>
+                <a href="#" class="">Clients</a>
+                <a href="#contatti" class="fa fa-fw fa-envelope"> Contact</a>
+            </div>
+            
+            <!--movimento Sidebar: java-->
+            <script>
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
+            
+            <!--navbar 1-->
+            <div id="topnav">
+                <ul>
+                    <li><a class="active" href="concessionaria.html">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#login">Login</a></li>
+                </ul>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <!--opensidebar-->
+        <button class="openbtn" onclick="openNav()">☰ </button>  
+        <br><br>
+        
+        <!--auto1 SEAT-->  
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://www.netcarshow.com/Seat-Leon_Cupra_R-2018-1600-04.jpg">
+                    <img src="https://www.netcarshow.com/Seat-Leon_Cupra_R-2018-1600-04.jpg" alt="Seat-Leon_Cupra_R-2018-1600-04" width="600" height="400">
+                </a>
+                <div class="desc">Seat-Leon_Cupra_R-2018</div>
+                
+                <button type="button" class="collapsible" id="design">Design</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptates sint ipsam quo architecto delectus error voluptatum sunt et? Inventore enim nulla fuga maiores eum molestiae porro expedita ad. Quae.
+                    </p>
+                </div>
+                <button type="button" class="collapsible" id="potenza">Potenza e Prestazioni</button>
+                <div class="content">
+                    <p>
+                        Il motore è un L4 2.0 TSI che eroga 310 CV a 6.500 giri.
+                        L'accelerazione è impressionante, ma i dati esatti non sono specificati.
+                        La velocità massima è anch'essa non dichiarata.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="collapsible" id="prezzo" style="width: 60%;">Prezzo e Disponibilità</button>
+            <div class="content">
+                <p>
+                    La SEAT Leon Cupra R è stata prodotta in soli 30 esemplari per il mercato italiano.
+                    È disponibile esclusivamente con il motore da 300 CV e cambio automatico DSG.
+                    Il prezzo di questa potente auto è di 46.200 euro
+                </p>
+            </div>   
+        </div> 
+        
+        <!--auto2-->
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://cdn.group.renault.com/ren/master/renault-new-cars/product-plans/clio-bja-ph2/modales/services-finance/clio-bja-ph2-004-services-finance.jpg.ximg.mediumx2.webp/61b38194fe.webp">
+                    <img src="https://cdn.group.renault.com/ren/master/renault-new-cars/product-plans/clio-bja-ph2/modales/services-finance/clio-bja-ph2-004-services-finance.jpg.ximg.mediumx2.webp/61b38194fe.webp" alt="RenaultClioHybrid" width="600" height="400">
+                </a> 
+                
+                <div class="desc">Renault Clio</div> 
+                
+                <button type="button" class="collapsible" id="design">Design</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae quod commodi facilis at itaque molestiae a modi architecto.
+                    </p>
+                </div>
+                <button type="button" class="collapsible" id="potenza">Potenza e Prestazioni</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iste eos aspernatur voluptate labore culpa veritatis ea cum facilis commodi ipsum officiis repudiandae consequatur optio suscipit, consequuntur accusamus ipsa. Eligendi.
+                    </p>
+                </div>
+                <button type="button" class="collapsible" id="prezzo">Prezzo e Disponibilità</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, vitae? Asperiores saepe recusandae tempore laboriosam officia vitae, eius, in cum similique repellendus culpa autem, eum facere non maiores. Veritatis, blanditiis.
+                    </p>  
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br><br>
+        
+        <!--altro1-->    
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://th.bing.com/th/id/OIP.vcLQxI6TR1NV8Tpt_PUDNgHaE8?rs=1&pid=ImgDetMain">
+                    <img src="https://th.bing.com/th/id/OIP.vcLQxI6TR1NV8Tpt_PUDNgHaE8?rs=1&pid=ImgDetMain" alt="VolvoEX90" width="600" height="400">
+                </a>
+                <div class="desc">Volvo EX90</div>
+                
+                <button type="button" class="collapsible" id="design">Design</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae quod commodi facilis at itaque molestiae a modi architecto.
+                    </p>
+                </div>
+                <button type="button" class="collapsible" id="potenza">Potenza e Prestazioni</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iste eos aspernatur voluptate labore culpa veritatis ea cum facilis commodi ipsum officiis repudiandae consequatur optio suscipit, consequuntur accusamus ipsa. Eligendi.
+                    </p>
+                </div>
+                <button type="button" class="collapsible" id="prezzo">Prezzo e Disponibilità</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, vitae? Asperiores saepe recusandae tempore laboriosam officia vitae, eius, in cum similique repellendus culpa autem, eum facere non maiores. Veritatis, blanditiis.
+                    </p>  
+                </div>
+            </div>
+        </div>
+        
+        <!--altro 2-->          
+        <div class="responsive" style="padding-top: 1%;">
+            <div class="gallery">
+                <a target="_blank" href="https://th.bing.com/th/id/OIP.f6Sf0FE17jN2YvNJCtWX4gHaEf?rs=1&pid=ImgDetMain">
+                    <img src="https://th.bing.com/th/id/OIP.f6Sf0FE17jN2YvNJCtWX4gHaEf?rs=1&pid=ImgDetMain" alt="AlfaRomeoTonale" width="600" height="400">
+                </a>
+                <div class="desc">Alfa Romeo Tonale</div>
+                <button type="button" class="collapsible" id="design">Design</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae quod commodi facilis at itaque molestiae a modi architecto.
+                    </p>
+                </div>
+                <button type="button" class="collapsible" id="potenza">Potenza e Prestazioni</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iste eos aspernatur voluptate labore culpa veritatis ea cum facilis commodi ipsum officiis repudiandae consequatur optio suscipit, consequuntur accusamus ipsa. Eligendi.
+                    </p>
+                </div>
+                <button type="button" class="collapsible" id="prezzo">Prezzo e Disponibilità</button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, vitae? Asperiores saepe recusandae tempore laboriosam officia vitae, eius, in cum similique repellendus culpa autem, eum facere non maiores. Veritatis, blanditiis.
+                    </p>  
+                </div>
+            </div>
+            
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <footer id="contatti">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            
+            <a href="https://web.telegram.org/" class="fa fa-telegram"></a>
+            
+            
+        </footer>
+        <div id="mycontact">
+            <div id="me">
+            <p>Author: Serena Gigliotti</p>
+            <p><a href="mailto:mymail@example.com" style="color: beige">seregigliotti@gmail.com </a></p>
+            </div>
+            <br>
+            <small>Tutti i contenuti sono protetti dalla licenza creative commons</small>
+            
+        </div>  
+    </body>
+    </html>
